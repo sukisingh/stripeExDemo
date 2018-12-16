@@ -35,7 +35,7 @@ body{
     background-image: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%);
     overflow: hidden;
     position: absolute; 
-    z-index:1;
+    z-index:-1;
     transform: skewY(-12deg);
     -webkit-transform: skewY(-12deg);
     transform-origin:0;
@@ -85,6 +85,7 @@ body{
     background-position:center; /*dbt*/
     /* */
     position:relative;  /*dbt*/
+    /*padding:50px;*/
     z-index:99;
   }
 
@@ -93,7 +94,7 @@ body{
     margin:0 ;
     /*max-width:500px;*/
     width:100%;
-    padding:150px 70px 100px;
+    padding:200px 70px 100px;
     text-align:left;
     
   }
@@ -116,7 +117,7 @@ body{
     margin-bottom:65px;  /*dbt*/    
     }
 
-  .Hero a{
+  /*.Hero a{
     font-size:16px;
     font-weight:600;
     color:#fff;
@@ -126,8 +127,52 @@ body{
     padding:9px 20px;
     border: 0.2px solid rgba(255,255,255,0.25);
     border-radius:5px;
-    /* margin-top:65px; */
+    /* margin-top:65px; }*/
+
+  .heroButton{
+    max-width:400px;
+    margin:2px;
+    /*padding:5px;*/
+    display:grid;
+    grid-template-columns:repeat(2,auto);
+    align-items:center;
+    justify-items: left;
   }
+
+  .heroButton button{
+    font-size:16px;
+    font-weight:600;
+    text-transform:uppercase;
+    padding:9px 18px;
+    border:none;
+    border: 0.2px solid rgba(255,255,255,0.25);
+    border-radius:5px;
+    outline:none;
+    cursor:pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    transition:1s;
+  
+  }
+  
+  .heroButton button:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    transform:translateY(-2px);
+  }
+
+.hero-create-btn{
+    color:#fff;
+    background:#3ecf8e;
+    
+}
+
+.hero-contact-btn{
+   color:#7795f8;
+   background:#fff;
+}
+
+
+
+
 
 
 
